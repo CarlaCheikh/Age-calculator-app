@@ -1,0 +1,148 @@
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+
+@media only screen and (min-width: 1200px) {
+    form section {
+        margin-right: 120px;
+    }
+    button[type=submit] {
+        margin-left: 250px; 
+    }
+}
+
+body {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--Light-grey);
+}
+
+main {
+    background-color: var(--White);
+    border-radius: 20px 20px 90px 20px;
+    padding: 50px 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    height: 220px;
+}
+
+form section {
+   display: flex;
+   justify-content: space-between;
+}
+
+form span {
+    display: flex;
+    flex-direction: column;
+ }
+
+form label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--Smokey-grey);
+    margin-bottom: 10px;
+    font-weight: inherit;
+}
+
+form input {
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+    border: 2px solid var(--Light-grey);
+    max-width: 100px;
+    font-weight: inherit;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+form input:focus {
+    border: 2px solid var(--Purple);
+}
+
+form small {
+    color: var(--Light-red);
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: inherit;
+}
+
+form #year {
+    margin-right: 0px;
+}
+
+form input::placeholder {
+    font-size: 20px;
+    color: var(--Smokey-grey); 
+}
+
+hr {
+    margin: 60px auto;
+}
+
+button[type=submit] {
+    position: relative;
+    bottom: 102px;
+    left: 125px; 
+    border: none;
+    background-color: var(--White);
+}
+
+button[type=submit] img {
+    padding: 20px;
+    background-color: var(--Purple);
+    color: var(--White);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button[type=submit] img:hover {
+    background-color: var(--Off-black);
+}
+
+article p {
+    font-size: 50px;
+    font-style: italic;
+}
+
+article p span {
+    color: var(--Purple);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+    }
