@@ -2,6 +2,7 @@
 
 ![Design preview for the Age calculator app coding challenge](./design/desktop-preview.jpg)
 
+https://carlacheikh.github.io/Age-calculator-app/
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
